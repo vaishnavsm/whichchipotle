@@ -2,8 +2,8 @@ import type { Component } from 'solid-js';
 
 const App: Component = () => {
   return (
-    <div class="h-screen w-screen flex flex-col bg-brown-500">
-      <header class="h-5/6 bg-brown-500 px-4 py-4 w-screen flex items-center justify-center flex-col gap-4 md:gap-8">
+    <div class="min-h-screen md:h-screen w-screen flex flex-col bg-brown-500">
+      <header class="h-5/6 bg-brown-500 px-4 py-12 w-screen flex items-center justify-center flex-col gap-4 md:gap-8">
         <h1 class="font-bold text-4xl md:text-8xl text-gray-200 text-center">
           WhichChipotle
         </h1>
@@ -20,7 +20,7 @@ const App: Component = () => {
         </h3>
         <hr />
         <div class="flex justify-center items-stretch self-stretch py-8">
-          <div class="flex flex-col-reverse md:flex-row gap-6 justify-around items-center md:w-1/2">
+          <div class="flex flex-col-reverse xl:flex-row gap-6 justify-around items-center md:w-3/5 2xl:w-1/2">
             <div class="flex flex-1 flex-col md:flex-row justify-center items-stretch">
               <input 
                 class="
@@ -66,7 +66,7 @@ const App: Component = () => {
           </div>
         </div>
       </header>
-      <footer class="flex-1 bg-gray-600 w-screen flex items-center justify-center flex-col gap-8">
+      <footer class="flex-1 py-6 bg-gray-600 w-screen flex items-center justify-center flex-col gap-8">
 
       </footer>
     </div>
