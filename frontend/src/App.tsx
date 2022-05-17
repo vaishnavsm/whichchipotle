@@ -3,7 +3,7 @@ import type { Component } from 'solid-js';
 const App: Component = () => {
   return (
     <div class="h-screen w-screen flex flex-col bg-brown-500">
-      <header class="h-5/6 bg-brown-500 px-4 w-screen flex items-center justify-center flex-col gap-4 md:gap-8">
+      <header class="h-5/6 bg-brown-500 px-4 py-4 w-screen flex items-center justify-center flex-col gap-4 md:gap-8">
         <h1 class="font-bold text-4xl md:text-8xl text-gray-200 text-center">
           WhichChipotle
         </h1>
@@ -21,17 +21,17 @@ const App: Component = () => {
         <hr />
         <div class="flex justify-center items-stretch self-stretch py-8">
           <div class="flex flex-col-reverse md:flex-row gap-6 justify-around items-center md:w-1/2">
-            <div class="flex flex-1 flex-col md:flex-row gap-2 justify-center items-stretch">
+            <div class="flex flex-1 flex-col md:flex-row justify-center items-stretch">
               <input 
                 class="
-                  outline outline-4 outline-fg-200 shadow-lg 
+                  outline-none border-4 border-fg-200 shadow-lg 
                   rounded-t-xl md:rounded-none md:rounded-l-xl
                   text-lg md:text-xl
                   w-full 
                   py-3 px-3 
                   text-gray-700 
                   leading-tight 
-                  focus:outline-fg-400 focus:shadow-outline
+                  focus:border-fg-400 focus:shadow-border
                 " 
                 id="username" 
                 type="text" 
@@ -41,7 +41,7 @@ const App: Component = () => {
                 class="
                 flex flex-row justify-center items-center
                 gap-2 md:gap-4 
-                outline outline-4 outline-fg-400 
+                border-4 border-fg-400 outline-none 
                 hover:bg-fg-400 
                 text-white font-bold text-lg md:text-xl 
                 py-2 px-3 md:py-4 md:px-6 
